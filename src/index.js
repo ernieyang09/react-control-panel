@@ -8,6 +8,13 @@ import './main.css';
    state = {
       collapsed: false,
    }
+
+   toggle = () => {
+     this.setState({
+       collapsed: !this.state.collapsed,
+     });
+   }
+   
    render() {
      return (
       <Layout>
@@ -41,7 +48,11 @@ import './main.css';
           <Layout.Content style={{ margin: '24px 16px', padding: 24, background: '#fff', minHeight: 280 }}>
             Content
           </Layout.Content>
+          <Layout.Footer style={{ textAlign: 'center' }}>
+            Ant Design ©2016 Created by Ant UED
+          </Layout.Footer>
         </Layout>
+
       </Layout>
      );
    }
