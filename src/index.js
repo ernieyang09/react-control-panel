@@ -14,15 +14,16 @@ import './main.css';
        collapsed: !this.state.collapsed,
      });
    }
-   
+
    render() {
      return (
       <Layout>
          <Layout.Sider
             trigger={null}
             collapsed={this.state.collapsed}
+            style={{ background: '#fff', borderRight: '1px solid #e9e9e9' }}
          >
-            <Menu mode="inline" defaultSelectedKeys={['1']}>
+            <Menu mode="inline" defaultSelectedKeys={['1']} style={{ borderRight: 'none' }}>
              <Menu.Item key="1">
                <Icon type="user" />
                <span>nav 1</span>
@@ -45,7 +46,7 @@ import './main.css';
               onClick={this.toggle}
             />
           </Layout.Header>
-          <Layout.Content style={{ margin: '24px 16px', padding: 24, background: '#fff', minHeight: 280 }}>
+          <Layout.Content style={{background: '#fff', minHeight: 280, padding: '12px'  }}>
             Content
           </Layout.Content>
           <Layout.Footer style={{ textAlign: 'center' }}>

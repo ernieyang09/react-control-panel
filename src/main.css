@@ -22,3 +22,6 @@ html, body {
 .ant-layout-header .trigger:hover {
   color: #108ee9;
 }
+#root .ant-menu-inline-collapsed {
+    width: 63px;
+}
